@@ -4,7 +4,7 @@
 	width: auto;
 	height: auto;
 	padding: 20px;
-	top: 23%;
+	top: 18%;
 	position: fixed;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 15px;
@@ -22,15 +22,14 @@
 p.comic {
     font-family: "Comic Sans MS", cursive, sans-serif;
 } 
-.footer_container {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 13px;
-    position: relative;
-    text-align: center;
-    height: auto;
-    clear: both;
-    bottom: 0;
-    padding-left: 40px;
-    padding-top: 20px;
-    margin-top: 20px;
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 13px;
+}
+body {
+	overflow: auto;
 }
