@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/layoutStyles.css">
+	<link rel="stylesheet" type="text/css" href="styles/indexStyles.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/aboutStyles.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="scripts/hangman.js"></script>
+</head>
+<body onkeypress="keypress(event);">	
+	<div id="body" class="body">
+		<div id="navbar" class="navbar" >
+			<ul id="navlist" class="navlist">
+				<h4>Navigation</h4>
+				<li>
+					Home
+				</li>
+				<li>
+					About
+				</li>
+				<li>
+					Hangman Game
+				</li>
+			</ul>
+		</div>
+		<div id="bodycontainer" class="bodycontainer">
+			<h2>Hangman the Game</h2>
+
+			<div>
+				<p class="comic">Your letters: <p id="keypress" ></p></p>
+				<p class="comic">Status: <p id="status" class="comic"></p></p>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+		<p>Created by LuisKaio, Jwu130</p>
+		<p>Find us on github!</p>
+		<p>Queens College <br/> 
+			65-30 Kissena Blvd | Flushing, NY 11367 <br/>
+			(718) 997-5000</p>
+	</div>
+</body>
+</html>
