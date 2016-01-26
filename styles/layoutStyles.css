@@ -1,13 +1,13 @@
 .navbar {
 	background-color: white;
 	border-radius: 20px;
-	float: left;
 	width: auto;
 	height: auto;
-	padding: 30px;
+	padding: 20px;
 	top: 23%;
 	position: fixed;
 	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 15px;
 }
 .navlist {
 	list-style-type: none;
@@ -19,7 +19,18 @@
 	list-style-type: none;
 	/*visibility: hidden;*/
 }
-
 p.comic {
     font-family: "Comic Sans MS", cursive, sans-serif;
 } 
+.footer_container {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+    height: auto;
+    clear: both;
+    bottom: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
