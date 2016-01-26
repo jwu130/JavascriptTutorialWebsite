@@ -1,0 +1,20 @@
+.navbar {
+	background-color: white;
+	border-radius: 20px;
+	float: left;
+	width: auto;
+	height: auto;
+	padding: 30px;
+	top: 23%;
+	position: fixed;
+}
+.navlist {
+	list-style-type: none;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navlist li ul {
+	list-style-type: none;
+	/*visibility: hidden;*/
+}
