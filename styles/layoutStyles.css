@@ -39,10 +39,10 @@ img {
 
 body {
 	overflow: auto;
-	/*background-color: lightblue;**/
-	background-image: url("http://www.zingerbugimages.com/backgrounds/light_blue_painted_brick_wall.jpg");
-	/*opacity: 0.8;*/
-	background-color:transparent;
+	background-color: lightblue;
+	/*background-image: url("http://www.zingerbugimages.com/backgrounds/light_blue_painted_brick_wall.jpg");*/
+	/*opacity: 0.8;
+	background-color:transparent;*/
 	background-repeat:repeat;
     background-position:center;
     background-attachment:fixed;

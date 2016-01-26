@@ -3,7 +3,7 @@ var array = [];
 
 $(document).ready(
 	function(){
-		alert("Hello");
+		alert("Hello");	
 	}
 );
 
