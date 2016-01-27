@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="styles/layoutStyles.css">
 	<link rel="stylesheet" type="text/css" href="styles/indexStyles.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/aboutStyles.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/hangman.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="scripts/hangman.js"></script>
 </head>
 <body onkeypress="keypress(event);">	
@@ -27,9 +29,9 @@
 		<div id="bodycontainer" class="bodycontainer">
 			<h2>Hangman the Game</h2>
 
-			<div>
-				<p class="comic">Your letters: <p id="keypress" ></p></p>
-				<p class="comic">Status: <p id="status" class="comic"></p></p>
+			<div> 
+				<p class="comic">Your letters: <p id="keypress"></p> <p id="text"></p>
+				<p class="comic">Status:</p> <p id="status" class="comic"></p>
 			</div>
 
 			<div id="word-container" class="word-container">
