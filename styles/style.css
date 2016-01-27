@@ -8,7 +8,7 @@
 }
 
 .bottom{
-  display: none;
+  /*display: none;*/
   border: solid 2px black;
   height: 30px;
   width: 40px;
@@ -16,17 +16,18 @@
 }
 
 .pole{
-  display: none;
+  /*display: none;*/
   margin-left: 20px;
   width: 2px;
   height: 50px;
   border: solid 2px black;
   border-top: transparent;
   border-bottom: transparent;
+  background-color: white;
 }
 
 .h-pole{
-  display: none;
+  /*display: none;*/
   margin-left: 20px;
   height: 2px;
   width: 50px;
@@ -34,101 +35,96 @@
 }
 
 .rope{
-  display: none;
+  /*display: none;*/
   width: 2px;
   height: 20px;
   border: solid 2px black;
-  position: relative;
-  left: 67px;
-  top: 29px;
+  position: absolute;
+  left: 575px;
+  top: 206px;
 }
 
 
 .head{
-  display: none;
+  visibility: hidden;
+  /*display: none;*/
   width: 10px;
   height: 10px;
   border: solid 2px black;
   border-radius: 50%;
-  position: relative;
-  top: 60px;
-  left: 63px;
+  position: absolute;
+  left: 575px;
+  top: 170px;
   z-index: 8;
   background-color: white;
 }
 
 .body{
-  display: none;
+  visibility: hidden;
+  /*display: none;*/
   width: 10px;
   height: 20px;
   border: solid 2px black;
   border-radius: 50%;
-  position: relative;
-  top: 96px;
-  left: 63px;
+  position: absolute;
+  top: 184px;
+  left: 575px;
   background-color: white;
   z-index: 2;
 }
 
-
-.button{
-  padding: 5px 12px;
-  width: 200px;
-  background-color: blue;
-  color: #fff;
-  font-style: sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
 .arms{
-  position: relative;
+  position: absolute;
   left: 63px;
 }
 
 .left-arm{
-  display: none;
-  position: relative;
+  visibility: hidden;
+  /*display: none;*/
+  position: absolute;
   width: 10px;
-  top: 115px;
-  left: -12px;
+  top: 28px;
+  left: 502px;
   border: solid 2px black;
   border-right: transparent;
   height: 2px;
 }
 
 .right-arm{
-  display: none;
-  position: relative;
+  visibility: hidden;
+  /*display: none;*/
+  position: absolute;
   width: 10px;
-  top: 110px;
-  left: 13px;
+  top: 28px;
+  left: 524px;
   border: solid 2px black;
   border-left: transparent;
   height: 2px;
 }
 
 .legs{
-  position: relative;
+  position: absolute;
 }
 
 .right-leg{
-  display: none;
-  position: relative;
+  /*display: none;*/
+  visibility: hidden;
+  position: absolute;
   height: 15px;
   width: 2px;
-  top: 142px;
-  left: 63px;
+  top: 37px;
+  left: 74px;
   border: solid 2px black;
   border-top: transparent;
 }
 
 .left-leg{
-  display: none;
-  position: relative;
+  /*display: none;*/
+  visibility: hidden;
+  position: absolute;
   height: 15px;
-  top: 159px;
-  left: 71px;
+  top: 37px;
+  left: 68px;
   border: solid 2px black;
   border-top: transparent;
   width: 2px;

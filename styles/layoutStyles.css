@@ -54,3 +54,7 @@ body {
     background-attachment:fixed;
     background-size:cover;
 }
+
+.restart {
+	margin-top: 20px;
+}
