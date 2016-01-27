@@ -22,7 +22,7 @@ function keypress(e){
 	//console.log(word.length);
 	for(i=0; i<word.length; i++){
 		if(word[i] == e.key){
-           underscores[i] = "                    "+e.key+"                    ";
+           underscores[i] = "_"+e.key;
 		   console.log("aqui " + e.key + " array: " + underscores[i]);
 			$("#"+12).html(underscores);
         }
