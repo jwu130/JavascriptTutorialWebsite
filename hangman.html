@@ -9,9 +9,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="scripts/hangman.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body onkeypress="keypress(event);">	
-	<div id="body" class="body">
+	<div id="docbody" class="docbody">
 		<div id="navbar" class="navbar" >
 			<ul id="navlist" class="navlist">
 				<h4>Navigation</h4>
@@ -26,9 +27,25 @@
 				</li>
 			</ul>
 		</div>
+
 		<div id="bodycontainer" class="bodycontainer">
 			<h2>Hangman the Game</h2>
-
+			<div class="wrapper">
+				<div class="legs">
+					<div class="left-leg"></div>
+					<div class="right-leg"></div>
+				</div>
+				<div class="arms">
+					<div class="left-arm"></div>
+					<div class="right-arm"></div>
+				</div>
+				<div class="body"></div>
+				<div class="head"></div>
+				<div class="rope"></div>
+				<div class="h-pole"></div>
+				<div class="pole"></div>
+				<div class="bottom"></div>
+			</div>
 			<div> 
 				<p class="comic">Your letters: <p id="keypress"></p> <p id="text"></p>
 				<p class="comic">Status:</p> <p id="status" class="comic"></p>
@@ -36,12 +53,10 @@
 
 			<div id="word-container" class="word-container">
 			</div>
-
 		</div>
-	</div>
 	<div class="footer">
+		<hr width="90%">
 		<p>Created by LuisKaio, Jwu130</p>
-		<p>Find us on github!</p>
 		<p>Queens College <br/> 
 			65-30 Kissena Blvd | Flushing, NY 11367 <br/>
 			(718) 997-5000</p>

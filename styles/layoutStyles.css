@@ -9,20 +9,24 @@
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 15px;
 }
+
 .navlist {
 	list-style-type: none;
 	padding-bottom: 10px;
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
 .navlist li ul {
 	list-style-type: none;
 	/*visibility: hidden;*/
 }
+
 p.comic {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 14px;
 } 
+
 .footer {
 	right: 0;
 	bottom: 0;
@@ -30,11 +34,13 @@ p.comic {
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 13px;
+	margin-top: 40px;
+	/*background-color: white;*/
 }
 
 img {
-    opacity: 0.5;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+	opacity: 0.5;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 body {
