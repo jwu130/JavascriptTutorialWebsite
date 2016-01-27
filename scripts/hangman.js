@@ -1,11 +1,6 @@
 // Variables
-<<<<<<< HEAD
-var array = [];
 var word = ["A", "B", "C", "D"];
-=======
 var chosenLetters = [];
-var word = [];
->>>>>>> 91274d62c50bd15764dd68edb7613f11d1d05c36
 var underscores = [];
 var words = ["neat", "horizon", "twisted", "evergreen", "strawberry", "emperor", "breach"];
 var descriptions = ["adjective", "thing", "adjective", "botany", "food", "person", "verb"];
@@ -42,21 +37,14 @@ function keypress(e){
 	//console.log(word.length);
 	for(i=0; i<word.length; i++){
 		if(word[i] == key){
-<<<<<<< HEAD
-           underscores[i] = key;
-		   //console.log("aqui " + key + " array: " + underscores[i]);
-=======
            	underscores[i] = key;
 		   	console.log("aqui " + key + " array: " + underscores[i]);
->>>>>>> 91274d62c50bd15764dd68edb7613f11d1d05c36
 			$("#word").html(underscores);
 			lettersFound++;
-        } else {
-        	wrongGuesses++;
-        	displayBodyPart();
-        }
+        } 
 	}
 	
+	if (wrongGuesses < 6) {
 	if(/^[a-zA-Z]$/.exec(key))
 		if(chosenLetters.indexOf(key)<0){
 			$("#keypress").append(key +" ");
@@ -65,6 +53,7 @@ function keypress(e){
 		} else {
 			$("#status").html("You already tried this letter: " + key);
 		}
+	}
 
 	checkStatus();
 };
@@ -95,7 +84,7 @@ function displayBodyPart(){
 
 // Check if the game is over
 function checkStatus(){
-	console.log(lettersFound);
+	console.log(lettersFound + " guesses " + wrongGuesses);
 	if(wrongGuesses>6){
 		$("#status").html("You lost...");
 	}
@@ -103,10 +92,16 @@ function checkStatus(){
 		$("#status").html("Congraduations. You won.");
 		// Also hault the handling of key presses?
 	}
+	else {
+        	wrongGuesses++;
+        	displayBodyPart();
+        }
 };
 
 // Restart game
 function restart(){
+	//set guesses to 0 for new game
+	wrongGuesses = 0;
 
 	// Retrieve new word
 	word = getNewWord();
