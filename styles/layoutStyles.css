@@ -31,6 +31,20 @@ p.comic {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 13px;
 }
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
 body {
 	overflow: auto;
+	background-color: lightblue;
+	/*background-image: url("http://www.zingerbugimages.com/backgrounds/light_blue_painted_brick_wall.jpg");*/
+	/*opacity: 0.8;
+	background-color:transparent;*/
+	background-repeat:repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
 }

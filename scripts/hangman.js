@@ -3,7 +3,6 @@ var array = [];
 
 $(document).ready(
 	function(){
-		generateDashes(6);
 		$('.bottom').show()
 		$(".pole").fadeIn(1000);
 		$(".h-pole").fadeIn(2000);
@@ -14,7 +13,7 @@ $(document).ready(
 		$(".right-arm").fadeIn(5000);
 		$(".left-leg").fadeIn(6000);
 		$(".right-leg").fadeIn(6000);
-		console.log("Hi");
+		generateDashes();
 	}
 );
 
@@ -34,20 +33,22 @@ function keypress(e){
 		}
 };
 
-function generateDashes(wordSize){
-	var i = 0;
+function generateDashes(){
+	
+	var word = "abcd123456";
+	var wordLength = word.length;
 	var dashes = $("#word-container");
-	while(i<wordSize){
-		// Add object in request
-	    var letterLoc = document.createElement("div");
-	    letterLoc.setAttribute("id", i);
-	    letterLoc.setAttribute("name", i);
-	    letterLoc.className = "individualletter";
-	    dashes.append(letterLoc);
-	    $("#"+i).html("__  ");
-	    $("#"+i).addClass("individualletter");
-	    i++;
-	    console.log(i.toString());
-	}
+	
+	console.log(word);
+	var userscores = word.replace(/.{1}/g, "___ ");
+	
+	var letterLoc = document.createElement("div");
+	    letterLoc.setAttribute("id", 12);
+	    letterLoc.setAttribute("name", 12);
+	    letterLoc.className = "#individualletter";
+		//document.querySelector("#individualletter");
+		dashes.append(letterLoc);
+		$("#"+12).html(userscores);
 };
+
 
