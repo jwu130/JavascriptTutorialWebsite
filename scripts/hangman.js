@@ -1,6 +1,6 @@
 // Variables
 var array = [];
-var word = ["a", "b", "c", "d"];
+var word = ["A", "B", "C", "D"];
 var underscores = [];
 
 $(document).ready(
@@ -27,23 +27,16 @@ $(document).ready(
 
 function keypress(e){
 	var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
-	key = String.fromCharCode(key);
+	key = String.fromCharCode(key).toUpperCase();
 
 	console.log(key);
 	// if(/\d/.exec(e.key))
 	//console.log(word.length);
 	for(i=0; i<word.length; i++){
-<<<<<<< HEAD
-		if(word[i] == e.key){
-           underscores[i] = "_"+e.key;
-		   console.log("aqui " + e.key + " array: " + underscores[i]);
-			$("#"+12).html(underscores);
-=======
 		if(word[i] == key){
            underscores[i] = key;
-		   console.log("aqui " + key + " array: " + underscores[i]);
+		   //console.log("aqui " + key + " array: " + underscores[i]);
 			$("#word").html(underscores);
->>>>>>> daf6db78d06d848bf788e3f730fece895381446a
         }
 	}
 	

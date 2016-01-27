@@ -22,9 +22,12 @@
 	/*visibility: hidden;*/
 }
 
-p.comic {
+.comic {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 14px;
+	/*margin-right: 1000px;*/
+	width: 70em;
+	height: 1em;
 } 
 
 .footer {
@@ -50,7 +53,7 @@ body {
 	/*opacity: 0.8;
 	background-color:transparent;*/
 	background-repeat:repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
+   	background-position:center;
+    	background-attachment:fixed;
+    	background-size:cover;
 }
