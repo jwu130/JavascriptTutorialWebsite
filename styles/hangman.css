@@ -1,9 +1,10 @@
 .individualletter{
-	float: left;
-	width: 10px;
-	color: red;
+	/*float: left;*/
+	text-align: left;
+	color: MediumSlateBlue;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	border: solid;
+	letter-spacing: normal;
+	/*border: solid;*/
 }
 .word-container{
 	float: left;

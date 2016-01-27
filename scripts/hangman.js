@@ -1,5 +1,7 @@
 // Variables
 var array = [];
+var word = ["a", "b", "c", "d"];
+var underscores = [];
 
 $(document).ready(
 	function(){
@@ -13,42 +15,60 @@ $(document).ready(
 		$(".right-arm").fadeIn(5000);
 		$(".left-leg").fadeIn(6000);
 		$(".right-leg").fadeIn(6000);
-		generateDashes();
-	}
-);
+		generateDashes(word);
+		
+	$("#text").keydown(function(){
+        $("#text").css("background-color", "yellow");
+    });
+    $("#text").keyup(function(){
+        $("#text").css("background-color", "pink");
+    });	
+});
 
 function keypress(e){
-	console.log(e.key );
 	var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
-	console.log(String.fromCharCode(key));
 	key = String.fromCharCode(key);
+
+	console.log(key);
 	// if(/\d/.exec(e.key))
-	// 	console.log(e.key)
+	//console.log(word.length);
+	for(i=0; i<word.length; i++){
+		if(word[i] == key){
+           underscores[i] = key;
+		   console.log("aqui " + key + " array: " + underscores[i]);
+			$("#word").html(underscores);
+        }
+	}
+	
 	if(/^[a-zA-Z]$/.exec(key))
-		if(!array.includes(key)){
+		if(array.indexOf(key)<0){
 			$("#keypress").append(key +" ");
 			array.push(key);
+			$("#status").html(" ");
 		} else {
 			$("#status").html("You already tried this letter: " + key);
 		}
 };
 
-function generateDashes(){
+function generateDashes(word){
 	
-	var word = "abcd123456";
+	//word = "abcd123456";
 	var wordLength = word.length;
 	var dashes = $("#word-container");
 	
 	console.log(word);
-	var userscores = word.replace(/.{1}/g, "___ ");
+	//underscores = word.replace(/.{1}/g, "___ ");// this only work if word is a string
+	
+	for(i=0; i<wordLength; i++) {
+    underscores[i] = "__ ";
+	}
 	
 	var letterLoc = document.createElement("div");
-	    letterLoc.setAttribute("id", 12);
-	    letterLoc.setAttribute("name", 12);
-	    letterLoc.className = "#individualletter";
-		//document.querySelector("#individualletter");
+	    letterLoc.setAttribute("id", "word");
+	    letterLoc.setAttribute("name", "word");
+	    letterLoc.className = "individualletter";
 		dashes.append(letterLoc);
-		$("#"+12).html(userscores);
+		$("#word").html(underscores);
 };
 
 
