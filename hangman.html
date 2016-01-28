@@ -6,10 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="styles/indexStyles.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/aboutStyles.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/hangman.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="scripts/hangman.js"></script>
-	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body onkeypress="keypress(event);">	
 	<div id="docbody" class="docbody">
@@ -17,10 +17,10 @@
 			<ul id="navlist" class="navlist">
 				<h4>Navigation</h4>
 				<li>
-					Home
+					<a href="index.html">Home</a>
 				</li>
 				<li>
-					About
+					<a href="about.html">About</a>
 				</li>
 				<li>
 					Hangman Game
@@ -31,26 +31,15 @@
 		<div id="bodycontainer" class="bodycontainer">
 			<h2>Hangman the Game</h2>
 			<div class="wrapper">
-				<div class="legs">
-					<div class="left-leg"></div>
-					<div class="right-leg"></div>
-				</div>
-				<div class="arms">
-					<div class="left-arm"></div>
-					<div class="right-arm"></div>
-				</div>
-				<div class="body"></div>
-				<div class="head"></div>
-				<!-- <div class="rope"></div> -->
-				<div class="h-pole"></div>
-				<div class="pole"></div>
-				<div class="bottom"></div>
+				<img id="wrapper" src='resources/1.png'></img>
 			</div>
 			<div> 
 				<p class="comic">Word Catagory:</p> <p id="description"></p> <p id="text"></p>
-				<p class="comic">Your letters:</p> <p id="keypress"></p> <p id="text"></p>
+				<p class="comic">Your letters:</p> <p id="keypress"> </p> <p id="text"></p>
 				<p class="comic">Status:</p> <p id="status" class="comic"></p>
 			</div>
+
+			<br>
 
 			<div id="word-container" class="word-container">
 			</div>
