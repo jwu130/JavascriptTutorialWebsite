@@ -1,3 +1,4 @@
+<!-- This page contains the code for the general layout for the website: including the navbar and footer -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,39 +6,32 @@
 	<link rel="stylesheet" type="text/css" href="styles/layoutStyles.css">
 </head>
 <body>
-	<table id="navbar" class="navbar" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-		<div>
-		<td>
-		<ul id="navlist" class="navlist">
-			<h3>Navigation</h3>
-			<li>
-				Home
-			</li>
-			<li>
-				About
-			</li>
-			<li>
-				Tutorials
-				<ul>
-					<li>
-						Beginner
-					</li>
-					<li>
-						Intermediate
-					</li>
-					<li>
-						Expert
-					</li>
-				</ul>
-			</li>
-		</ul>
-		</td>
-		<td><p>some text</p></td>
-		<td><p>some text</p></td>
-		</tr>
-	</table>
+	<div id="body" class="body">
+		<div id="navbar" class="navbar" >
+			<ul id="navlist" class="navlist">
+				<h4>Navigation</h4>
+				<li>
+					Home
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="hangman.html">Hangman Game</a>
+				</li>
+			</ul>
+		</div>
+		<div id="bodycontainer" class="bodycontainer">
+			<!--  Content -->
+		</div>
 	</div>
-
+	<div class="footer">
+		<hr width="90%">
+		<p>Created by LuisKaio, Jwu130</p>
+		<p>Find us on github!</p>
+		<p>Queens College <br/> 
+			65-30 Kissena Blvd | Flushing, NY 11367 <br/>
+			(718) 997-5000</p>
+	</div>
 </body>	
 </html>
