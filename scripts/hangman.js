@@ -147,7 +147,7 @@ function restart(){
 
 // Returns a new random word from array
 function getNewWord(){
-	var index = Math.floor(Math.random() * (7-0));
+	var index = Math.floor(Math.random() * 7);
 	console.log(index);
 	var wordArr = words[index].split("");
 	$("#description").html(descriptions[index]);
